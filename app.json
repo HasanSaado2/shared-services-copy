@@ -1,10 +1,8 @@
 {
   "expo": {
-    "name": "shared-services",
-    "slug": "shared-services",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "name": "Services Hub",
+    "slug": "ServicesHub",
+    "version": "1.0.1",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -15,19 +13,28 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hasansaado.ServicesHub",
+      "buildNumber": "4",
+      "icon": "./assets/Apple-App-icon.png",
+      "versionCode": "1.0.1"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/Android-App-icon.png",
+        "backgroundColor": "#ffffff",
+        "icon": "./assets/Android-App-icon.png"
+      },
+      "package": "com.hasansaado.ServicesHub",
+      "versionCode": 3
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "expo-font"
-    ]
+    "extra": {
+      "eas": {
+        "projectId": "2966bc50-8cf4-463d-9121-cfa8a6ee934e"
+      }
+    }
   }
 }

@@ -1,0 +1,27 @@
+{
+  "cli": {
+    "version": ">= 3.11.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "abbas.bazzi@cts.ae",
+        "ascAppId": "6448848430",
+        "appleTeamId": "FXJ7762SXW"
+      }
+    }
+  }
+}
