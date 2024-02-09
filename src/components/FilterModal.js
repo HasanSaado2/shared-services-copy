@@ -11,8 +11,8 @@ import {
   Image,
 } from "react-native";
 import MainButton from "./MainButton";
-import closeModal from "@assets/CloseModal.png";
-import leftArrow from "@assets/leftArrow.png";
+import closeModal from "../../assets/CloseModal.png";
+import leftArrow from "../../assets/leftArrow.png";
 import BlueCheckButton from "./BlueCheckButton";
 import FilterCombo from "./FilterCombo";
 import { useState } from "react";

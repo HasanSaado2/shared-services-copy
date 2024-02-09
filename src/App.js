@@ -2,13 +2,15 @@ import { registerRootComponent } from "expo";
 import Navigator from "../src/navigation";
 import { useFonts } from "expo-font";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { LogBox } from "react-native";
+import { Text, View } from "react-native";
+import * as SplashScreen from "expo-splash-screen";
+
+SplashScreen.preventAutoHideAsync();
+
 const queryClient = new QueryClient();
 
 function App() {
-  // LogBox.ignoreLogs(["Warning: ..."]);
-  // LogBox.ignoreLogs(["Warning: ..."]);
-  const [isLoaded] = useFonts({
+  const [fontsLoaded] = useFonts({
     MontserratLight: require("../assets/fonts/Montserrat-Light.ttf"),
     MontserratRegular: require("../assets/fonts/Montserrat-Regular.ttf"),
     MontserratBold: require("../assets/fonts/Montserrat-Bold.ttf"),
@@ -17,9 +19,15 @@ function App() {
     MontserratSemiBold: require("../assets/fonts/Montserrat-SemiBold.ttf"),
   });
 
-  if (!isLoaded) {
-    return null;
+  if (!fontsLoaded) {
+    console.warn("hiiii");
+    return (
+      <View>
+        <Text>sfdfdsfsdf</Text>
+      </View>
+    );
   }
+
   return (
     <QueryClientProvider client={queryClient}>
       <Navigator />
@@ -27,4 +35,4 @@ function App() {
   );
 }
 
-export default registerRootComponent(App);
+registerRootComponent(App);

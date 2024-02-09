@@ -13,16 +13,17 @@ import GoBackButton from "../components/GoBackButton";
 import React, { useCallback, useState, useEffect } from "react";
 import ProfileRow from "../components/ProfileRow";
 import moment from "moment";
-import Email from "@assets/Email.png";
-import call from "@assets/call.png";
-import sector from "@assets/sector.png";
-import join from "@assets/join.png";
-import cake from "@assets/cake.png";
-import room from "@assets/room.png";
-import stairs from "@assets/stairs.png";
-import division from "@assets/division.png";
+// import Email from "@assets/Email.png";
+import Email from "../../assets/Email.png";
+import call from "../../assets/call.png";
+import sector from "../../assets/sector.png";
+import join from "../../assets/join.png";
+import cake from "../../assets/cake.png";
+import room from "../../assets/room.png";
+import stairs from "../../assets/stairs.png";
+import division from "../../assets/division.png";
 
-import dude from "@assets/dude.png";
+import dude from "../../assets/dude.png";
 import { MainButton } from "../components";
 
 function Profile({ navigation, route }) {

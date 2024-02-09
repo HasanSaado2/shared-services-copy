@@ -10,7 +10,7 @@ import {
   TouchableOpacity,
   Image,
 } from "react-native";
-import blueCheck from "@assets/blueCheck.png";
+import blueCheck from "../../assets/blueCheck.png";
 
 function BlueCheckButton({
   ButtonText,

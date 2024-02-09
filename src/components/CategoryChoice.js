@@ -8,15 +8,15 @@ import {
   Text,
 } from "react-native";
 import React, { useCallback, useState, useEffect } from "react";
-import general from "@assets/click-icon.png";
-import procurement from "@assets/procurement.png";
-import financial from "@assets/financial.png";
-import technical from "@assets/technial.png";
+import general from "../../assets/click-icon.png";
+import procurement from "../../assets/procurement.png";
+import financial from "../../assets/financial.png";
+import technical from "../../assets/technial.png";
 
-import generalWhite from "@assets/click-iconWhite.png";
-import procurementWhite from "@assets/procurementWhite.png";
-import financialWhite from "@assets/financialWhite.png";
-import technicalWhite from "@assets/technialWhite.png";
+import generalWhite from "../../assets/click-iconWhite.png";
+import procurementWhite from "../../assets/procurementWhite.png";
+import financialWhite from "../../assets/financialWhite.png";
+import technicalWhite from "../../assets/technialWhite.png";
 
 import CategoryMenuButton from "./CategoryMenuButton";
 import RectangularMenuButton from "./RectangularMenuButton";
@@ -58,13 +58,13 @@ function CategoryChoice({ selectedCategoryId, setSelectedCategoryId }) {
     setSelectedCategoryId(CategoryId);
   };
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const menuButtons = categoryList.map((cat) => {
+  const menuButtons = categoryList.map((cat, index) => {
     return (
       <CategoryMenuButton
         icon={cat.Icon}
         selectedIcon={cat.SelectedIcon}
         buttonText={cat.Text}
-        index={cat.Index}
+        index={index}
         handlePress={() => menuClick(cat.Index, cat.CategoryId)}
         selectedIndex={selectedIndex}
       />

@@ -4,13 +4,22 @@
     "slug": "ServicesHub",
     "version": "1.0.1",
     "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/Montserrat-Light.ttf"]
+        }
+      ]
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
-      "**/*"
+      "**/*",
+      "assets/fonts/*"
     ],
     "ios": {
       "supportsTablet": true,

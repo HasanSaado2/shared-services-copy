@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { View, SafeAreaView, StyleSheet, Text } from "react-native";
-import { Title, CustomTextInput, MainButton } from "@components";
+import { Title, CustomTextInput, MainButton } from "../components";
 import { useMutation } from "@tanstack/react-query";
 import API_URL from "../Constants";
 import axios from "axios";
@@ -10,7 +10,7 @@ import { isEmpty } from "lodash";
 export default function Login({ navigation, route }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { setLoad, load } = route.params;
+  // const { setLoad, load } = route.params;
   const [errorMessage, setErrorMessage] = useState("");
 
   const login = useMutation({
@@ -21,10 +21,10 @@ export default function Login({ navigation, route }) {
       await AsyncStorage.setItem("token", data?.data?.token);
       await AsyncStorage.setItem("userType", data?.data?.usertype);
       await AsyncStorage.setItem("userId", data?.data?.userid.toString());
-      setLoad(!load);
+      // setLoad(!load);
     },
     onError: async (error) => {
-      setErrorMessage(error?.message)
+      setErrorMessage(error?.message);
     },
   });
 
@@ -34,6 +34,8 @@ export default function Login({ navigation, route }) {
       password: password,
     });
   };
+
+  console.warn("HELLOOOOO");
 
   return (
     <SafeAreaView style={styles.container}>
@@ -59,10 +61,9 @@ export default function Login({ navigation, route }) {
             setValue={setPassword}
           />
         </View>
-        {
-          !isEmpty(errorMessage) &&
+        {!isEmpty(errorMessage) && (
           <Text style={styles.errorText}>{errorMessage}</Text>
-        }
+        )}
         <View style={styles.signIn}>
           <MainButton text="Sign In" onPress={handleOnPress} />
         </View>
@@ -100,6 +101,6 @@ const styles = StyleSheet.create({
 
   errorText: {
     fontFamily: "MontserratSemiBold",
-    color: "#C90000"
-  }
+    color: "#C90000",
+  },
 });

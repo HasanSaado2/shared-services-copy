@@ -7,26 +7,26 @@ import {
   PixelRatio,
 } from "react-native";
 import { useState, useEffect } from "react";
-import { Title, SignOut } from "@components";
+import { Title, SignOut } from "../components";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useFetchUserById } from "@hooks/users";
+import { useFetchUserById } from "../hooks/users";
 import {
   useFetchOrdersByStatus,
   useFetchPendingOrders,
   useFetchInProgressOrders,
   useFetchCompletedOrders,
   useFetchAllOrders,
-} from "@hooks/orders";
+} from "../hooks/orders";
 import {
   SubMenuButtonGroup,
   OrderSummary,
   Filter,
   CustomLink,
-} from "@components";
+} from "../components";
 
-import BagIcon from "@assets/bag.png";
-import ClockIcon from "@assets/clock.png";
-import CompletedIcon from "@assets/completed.png";
+import BagIcon from "../../assets/bag.png";
+import ClockIcon from "../../assets/clock.png";
+import CompletedIcon from "../../assets/completed.png";
 import { isEmpty } from "lodash";
 import moment from "moment";
 

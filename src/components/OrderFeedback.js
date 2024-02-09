@@ -9,10 +9,10 @@ import {
   TouchableOpacity,
   TextInput,
 } from "react-native";
-import smilyface from "@assets/smilyface.png";
-import straightFace from "@assets/straightFace.png";
-import notHappyFace from "@assets/notHappyFace.png";
-import baristaPerson from "@assets/baristaPerson.png";
+import smilyface from "../../assets/smilyface.png";
+import straightFace from "../../assets/straightFace.png";
+import notHappyFace from "../../assets/notHappyFace.png";
+import baristaPerson from "../../assets/baristaPerson.png";
 import { useState } from "react";
 import MainButton from "./MainButton";
 

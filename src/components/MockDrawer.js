@@ -15,12 +15,9 @@ import { useMutation } from "@tanstack/react-query";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import axios from "axios";
 import API_URL from "../Constants";
-import orderButton from "@assets/shopping_cart.png";
-import closePopUp from "@assets/backbutton.png";
+import closePopUp from "../../assets/backbutton.png";
 import OrderMenuItem from "./OrderMenuItem";
 import MainButton from "./MainButton";
-import PopUpAlert from "./PopUpAlert";
-import moment from "moment";
 import TrackOrder from "./TrackOrder";
 import MiniTitle from "./MiniTitle";
 

@@ -37,7 +37,7 @@ function CategoryItemList({
 
   const categoryDisplay =
     categoryList &&
-    categoryList.map((cat) => {
+    categoryList.map((cat, index) => {
       return (
         <>
           {!cat.status && (
@@ -45,12 +45,14 @@ function CategoryItemList({
               ItemId={cat.categoryId}
               buttonText={cat.categoryName}
               handlePress={() => categoryItemClick(cat)}
+              key={index}
             />
           )}
           {cat.status && (
             <RectangularMenuButton
               ItemId={cat.categoryId}
               buttonText={cat.categoryName}
+              key={index}
               handlePress={() => categoryItemClick(cat)}
             />
           )}

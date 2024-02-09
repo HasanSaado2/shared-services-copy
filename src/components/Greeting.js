@@ -6,7 +6,7 @@ import {
   PixelRatio,
   TouchableOpacity,
 } from "react-native";
-import dude from "@assets/dude.png";
+import dude from "../../assets/dude.png";
 import { P } from "@expo/html-elements";
 const pixelDensity = PixelRatio.get();
 function Greeting({ fontSize = 16, name, color = "#000", navigation, route }) {

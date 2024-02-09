@@ -8,7 +8,7 @@ import {
   Dimensions,
   Image,
 } from "react-native";
-import ontheway from "@assets/ontheway.gif";
+import ontheway from "../../assets/ontheway.gif";
 
 function OrderOnTheWay() {
   return (

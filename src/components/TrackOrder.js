@@ -16,7 +16,7 @@ import { useMutation } from "@tanstack/react-query";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import axios from "axios";
 import API_URL from "../Constants";
-import closePopUp from "@assets/backbutton.png";
+import closePopUp from "../../assets/backbutton.png";
 import MiniTitle from "./MiniTitle";
 import TrackOrderMenuItem from "./TrackOrderMenuItem";
 

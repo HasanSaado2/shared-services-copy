@@ -21,9 +21,8 @@ function OrderSummaryExpanded({
   order,
   user,
   selected,
-  handleUpdateOrder
+  handleUpdateOrder,
 }) {
-
   return (
     <View style={styles.centeredView}>
       <Modal
@@ -38,12 +37,8 @@ function OrderSummaryExpanded({
         <View style={styles.modalContainer}>
           <View style={styles.modalView}>
             <View style={styles.header}>
-              <Text style={styles.headerText}>
-                {user}
-              </Text>
-              <Pressable
-                onPress={() => setModalVisible(!modalVisible)}
-              >
+              <Text style={styles.headerText}>{user}</Text>
+              <Pressable onPress={() => setModalVisible(!modalVisible)}>
                 <Image source={closePopUp} />
               </Pressable>
             </View>
@@ -55,59 +50,59 @@ function OrderSummaryExpanded({
                 Catering Services
               </Text>
             </View> */}
-            {
-              order?.orderDetails?.map((item, index) => (
-                <OrderSummaryItem
-                  item={item}
-                  key={index}
-                  lastChild={((index + 1) == (order?.orderDetails?.length)) ? true : false}
-                />
-              ))
-            }
+            {order?.orderDetails?.map((item, index) => (
+              <OrderSummaryItem
+                item={item}
+                key={index}
+                lastChild={
+                  index + 1 == order?.orderDetails?.length ? true : false
+                }
+              />
+            ))}
             {/* <MainButton text="Accept" /> */}
-            {
-              "pending" === selected ?
-                <MainButton
-                  text="Accept"
-                  onPress={() => handleUpdateOrder("in-progress")}
-                /> :
-                "in-progress" === selected ?
-                  <View>
-                    {/* <MainButton
+            {"pending" === selected ? (
+              <MainButton
+                text="Accept"
+                onPress={() => handleUpdateOrder("in-progress")}
+              />
+            ) : "in-progress" === selected ? (
+              <View>
+                {/* <MainButton
                     text="On the way"
                     height={41}
                     onPress={() => handleAcceptPress()}
                   /> */}
-                    <MainButton
-                      text="Complete"
-                      onPress={() => handleUpdateOrder("completed")}
-                      color="#0FAB0B"
-                    />
-                  </View> :
-                  "completed" === selected ?
-                    <CustomOutlinedButton
-                      text="Completed"
-                      height={41}
-                      onPress={() => { }}
-                      borderColor="#0FAB0B"
-                      width="100%"
-                    /> :
-                    "cancelled" === selected ?
-                      <CustomOutlinedButton
-                        text="Cancelled"
-                        height={41}
-                        onPress={() => { }}
-                        borderColor="#C90000"
-                        width="100%"
-                      /> :
-                      <></>
-            }
+                <MainButton
+                  text="Complete"
+                  onPress={() => handleUpdateOrder("completed")}
+                  color="#0FAB0B"
+                />
+              </View>
+            ) : "completed" === selected ? (
+              <CustomOutlinedButton
+                text="Completed"
+                height={41}
+                onPress={() => {}}
+                borderColor="#0FAB0B"
+                width="100%"
+              />
+            ) : "cancelled" === selected ? (
+              <CustomOutlinedButton
+                text="Cancelled"
+                height={41}
+                onPress={() => {}}
+                borderColor="#C90000"
+                width="100%"
+              />
+            ) : (
+              <></>
+            )}
           </View>
         </View>
       </Modal>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   modalContainer: {
@@ -119,19 +114,19 @@ const styles = StyleSheet.create({
 
   header: {
     flexDirection: "row",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
   },
 
   headerText: {
     fontFamily: "MontserratBold",
     fontSize: 18,
-    color: "#000"
+    color: "#000",
   },
 
   row: {
     flexDirection: "row",
     marginTop: 5,
-    marginBottom: 5
+    marginBottom: 5,
   },
 
   serviceText: {
@@ -153,7 +148,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 4,
     elevation: 5,
-    width: 460
+    width: 460,
   },
 
   button: {
@@ -165,7 +160,7 @@ const styles = StyleSheet.create({
   serviceNameText: {
     fontFamily: "MontserratRegular",
     fontSize: 18,
-    color: "#000"
+    color: "#000",
   },
 
   buttonOpen: {
@@ -176,7 +171,7 @@ const styles = StyleSheet.create({
     color: "white",
     fontWeight: "bold",
     textAlign: "center",
-  }
+  },
 });
 
 export default OrderSummaryExpanded;

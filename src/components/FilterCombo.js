@@ -11,7 +11,7 @@ import {
   Image,
 } from "react-native";
 
-import comboArrow from "@assets/comboArrow.png";
+import comboArrow from "../../assets/comboArrow.png";
 
 function FilterCombo({ FilterName, onPress }) {
   return (

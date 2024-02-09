@@ -6,10 +6,10 @@ import {
   PixelRatio,
   Image,
 } from "react-native";
-import divider from "@assets/divider.png";
-import bell from "@assets/bell.png";
-import star from "@assets/star.png";
-import settings from "@assets/settingsMenu.png";
+import divider from "../../assets/divider.png";
+import bell from "../../assets/bell.png";
+import star from "../../assets/star.png";
+import settings from "../../assets/settingsMenu.png";
 import {
   Title,
   Greeting,
@@ -19,7 +19,7 @@ import {
   CategoryMenuButton,
   SquareMenuButton,
   CustomFormInput,
-} from "@components";
+} from "../components";
 const pixelDensity = PixelRatio.get();
 
 function HeaderTop({ navigation, route }) {

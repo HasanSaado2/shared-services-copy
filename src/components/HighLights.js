@@ -12,7 +12,7 @@ import {
 import API_URL from "../Constants";
 import axios from "axios";
 
-import highlight1 from "@assets/highlight1.png";
+import highlight1 from "../../assets/highlight1.png";
 import React, { useCallback, useState, useEffect } from "react";
 
 function HighLights() {

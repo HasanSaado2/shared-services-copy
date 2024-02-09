@@ -1,5 +1,5 @@
 import Lottie from "lottie-react-native";
-import loading from "@assets/97102-loading.json";
+import loading from "../../assets/97102-loading.json";
 
 function LoadingLottie({ showLoading }) {
   return (

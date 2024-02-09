@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import React, { useCallback, useState, useEffect } from "react";
 
-import goBack from "@assets/goBack.png";
+import goBack from "../../assets/goBack.png";
 
 function GoBackButton({ SubCategoryText, onPress }) {
   return (

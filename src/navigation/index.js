@@ -22,6 +22,7 @@ function Navigator() {
 
   const getUserType = async () => {
     await AsyncStorage.getItem("userType").then((val) => {
+      console.warn("USERTYPE: ", userType);
       setUserType(val);
     });
   };
@@ -39,7 +40,16 @@ function Navigator() {
           headerShadowVisible: false,
         }}
       >
-        {"Admin" === userType ? (
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{ headerShown: false }}
+          // initialParams={{
+          //   setLoad: setLoad,
+          //   load: load,
+          // }}
+        />
+        {/* {"Admin" === userType ? (
           <Stack.Screen
             name="AdminHome"
             component={AdminHome}
@@ -110,7 +120,7 @@ function Navigator() {
             load: load,
             userId: userId,
           }}
-        />
+        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

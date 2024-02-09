@@ -11,7 +11,7 @@ import {
   Image,
 } from "react-native";
 import MainButton from "./MainButton";
-import closeModal from "@assets/CloseModal.png";
+import closeModal from "../../assets/CloseModal.png";
 import BlueCheckButton from "./BlueCheckButton";
 
 const { height, width } = Dimensions.get("window");

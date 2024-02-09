@@ -7,10 +7,11 @@ import {
   ActivityIndicator,
   TouchableOpacity,
   Modal,
+  Platform,
 } from "react-native";
 import React, { useState, useEffect } from "react";
 import FilterItem from "./FilterItem";
-import { useFetchMeetingRoomUsers } from "@hooks/users";
+import { useFetchMeetingRoomUsers } from "../hooks/users";
 import { isEmpty } from "lodash";
 // import RNDateTimePicker from "@react-native-community/datetimepicker";
 import DatePicker from "react-native-modern-datepicker";

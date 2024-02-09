@@ -15,17 +15,17 @@ import {
   CategoryMenuButton,
   SquareMenuButton,
   CustomFormInput,
-} from "@components";
+} from "../components";
 import GoBackButton from "../components/GoBackButton";
 
-import home from "@assets/home.png";
-import cardExpress from "@assets/cardExpress.png";
-import officeVirtualSite from "@assets/officeVirtualSite.png";
-import schedulizedServices from "@assets/schedulizedServices.png";
-import history from "@assets/history.png";
-import TechnicalSupport from "@assets/TechnicalSupport.png";
-import SettingImage from "@assets/Settings.png";
-import signOut from "@assets/signOut.png";
+import home from "../../assets/home.png";
+import cardExpress from "../../assets/cardExpress.png";
+import officeVirtualSite from "../../assets/officeVirtualSite.png";
+import schedulizedServices from "../../assets/schedulizedServices.png";
+import history from "../../assets/history.png";
+import TechnicalSupport from "../../assets/TechnicalSupport.png";
+import SettingImage from "../../assets/Settings.png";
+import signOut from "../../assets/signOut.png";
 import SettingMenuButton from "../components/SettingMenuButton";
 
 const SettingsMenuList = [

@@ -15,7 +15,7 @@ import {
   CategoryMenuButton,
   SquareMenuButton,
   CustomFormInput,
-} from "@components";
+} from "../components";
 
 import HeaderTop from "../components/HeaderTop";
 import CategoryChoice from "../components/CategoryChoice";

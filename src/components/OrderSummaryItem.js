@@ -7,7 +7,7 @@ import {
   PixelRatio,
   Platform,
 } from "react-native";
-import { useFetchUserById } from "@hooks/users";
+import { useFetchUserById } from "../hooks/users";
 import { useMutation } from "@tanstack/react-query";
 import OrderSummaryExpanded from "./OrderSummaryExpanded";
 import { useState } from "react";

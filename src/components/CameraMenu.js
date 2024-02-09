@@ -11,9 +11,9 @@ import {
   Image,
 } from "react-native";
 import * as ImagePicker from "expo-image-picker";
-import Camera_Choose from "@assets/Camera_Choose.png";
-import Gallery_Choose from "@assets/Gallery_Choose.png";
-import closeModal from "@assets/CloseModal.png";
+import Camera_Choose from "../../assets/Camera_Choose.png";
+import Gallery_Choose from "../../assets/Gallery_Choose.png";
+import closeModal from "../../assets/CloseModal.png";
 import API_URL from "../Constants";
 import axios from "axios";
 import { useState } from "react";

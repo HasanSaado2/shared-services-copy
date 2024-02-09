@@ -9,8 +9,8 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-import unSelectedRadio from "@assets/unSelectedRadio.png";
-import selectedRadio from "@assets/selectedRadio.png";
+import unSelectedRadio from "../../assets/unSelectedRadio.png";
+import selectedRadio from "../../assets/selectedRadio.png";
 function RadioButton({ RadioText, value, setValue, myValue }) {
   return (
     <TouchableOpacity

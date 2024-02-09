@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import React, { useCallback, useState, useEffect } from "react";
 const { height, width } = Dimensions.get("window");
-import divider from "@assets/divider.png";
+import divider from "../../assets/divider.png";
 import GoBackButton from "./GoBackButton";
 import MainButton from "./MainButton";
 import API_URL from "../Constants";

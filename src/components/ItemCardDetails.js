@@ -14,9 +14,9 @@ import MainButton from "./MainButton";
 import API_URL from "../Constants";
 import QuantityCounter from "./QuantityCounter";
 const { height, width } = Dimensions.get("window");
-import divider from "@assets/divider.png";
+import divider from "../../assets/divider.png";
 import { useState, useEffect } from "react";
-import closeModal from "@assets/CloseModal.png";
+import closeModal from "../../assets/CloseModal.png";
 import SpecialRequestQuantity from "./SpecialRequestQuantity";
 
 function ItemCardDetails({

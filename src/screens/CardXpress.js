@@ -11,7 +11,7 @@ import {
 import HeaderTop from "../components/HeaderTop";
 import GoBackButton from "../components/GoBackButton";
 
-import smartId from "@assets/smart-id-blank.png";
+import smartId from "../../assets/smart-id-blank.png";
 
 function CardXpress({ navigation, route }) {
   return (

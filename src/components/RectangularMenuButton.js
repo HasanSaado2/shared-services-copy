@@ -1,6 +1,6 @@
 import { StyleSheet, TouchableOpacity, View, Image, Text } from "react-native";
 import API_URL from "../Constants";
-import StarGold from "@assets/star-gold.png";
+import StarGold from "../../assets/star-gold.png";
 
 function RectangularMenuButton({ buttonText, handlePress, ItemId }) {
   return (
